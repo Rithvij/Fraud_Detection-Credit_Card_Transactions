@@ -1,2 +1,15 @@
-# Fraud-Detection---Credit-Card-Transactions
-Machine learning plays a vital role in the fraud detection due to its ability to analyze large volumes of transaction data and identify complex patterns to make predictions. Hence supervised and unsupervised machine learning models have been explored to address the significant issue of false negatives in credit card transaction dataset
+# Fraud Detection - Credit Card Transactions
+Machine learning plays a vital role in the fraud detection due to its ability to analyze large volumes of transaction data and identify complex patterns to make predictions. Hence **supervised** and **unsupervised** machine learning models have been explored to address the significant issue of false negatives in credit card transaction dataset<br>
+
+<p><b>"Minimizing false negatives in fraud detection"</b> is crucial because failing to identify fraudulent transactions can have severe consequences. False negatives occur when a fraudulent transaction is incorrectly classified as non-fraudulent, allowing suspicious activity to go undetected.To tackle this challenge - supervised learning ensemble models like <b>"Balanced Random Forest Classifier"</b> and <b>"XGBoost"</b>, along with Artificial Neural Networks such as <b>"Multi-layer Perceptron"</b>, are utilized for fraud detection tasks to effectively minimize false negatives. Additionally, unsupervised learning models like <b>"Principal Component Analysis"</b> and <b>"Autoencoders"</b> are explored, especially in cases where credit card transactions are unlabeled and fraudulent transactions are rare compared to non-fraudulent cases. PCA and Autoencoder help analyze and mitigate false negatives by identifying patterns in the data.These models are then compared to determine which one is most effective at minimizing false negatives.</p><br>
+
+<b>Exploratory data Analysis - </b>
+<li>Class Distribution is analyzed between fraudulent and non-fraudulent transactions</li>
+<li><b>Correlation matrix</b> and <b>Box Plots</b> are used to analyze the distribution of features in the dataset. Specifically, distribution and spread of data with respect of classes in our dataset is analyzed.</li>
+<li><b>Normality Test</b> has been done to determine which machine learning classifier performs better</li>
+<li><b>Mann-Whitney-U Test</b> to observe the statistical difference between distribution of classes</li>
+<li>To observe feature importance among our dataset, <b>Random Forest</b> and <b>Gradient Boosting Classifier</b> to get feature importance and getting the average of feature importance scores </li><br>
+
+<p>For each model, rigorous analysis was conducted to prevent overfitting while addressing the class imbalance inherent in the dataset. Optimal parameters were applied to observe accuracies and, notably, to minimize overall false negatives. The approach employed to determine the best threshold aimed to minimize false negatives while ensuring that the false positive rate remained below 10%. Subsequently, the best thresholds for each model were utilized to minimize false negatives.</p><br>
+
+<p>Of all the models assessed, <b>XGBoost</b> exhibited the most promising performance, with only <b>17 false negatives and 5 false positives</b>(prior to applying the best threshold). After applying the best threshold, XGBoost continued to outper- form other models, with just 7 false negatives and 1395 false positives.</p>
